@@ -1,0 +1,15 @@
+<div *ngFor="let imagen of imagenes">
+  <img [src]="imagen.url" (click)="marcarPuntoDeReferencia($event, imagen.id)" style="max-width: 100%; height: auto;">
+  <div>
+    <form (submit)="guardarTest(pregunta, imagen.url, puntosDeReferencia[imagen.id])">
+      <label for="pregunta">Pregunta:</label>
+      <textarea id="pregunta" name="pregunta" [(ngModel)]="pregunta"></textarea>
+      <ul>
+        <li *ngIf="puntosDeReferencia[imagen.id]">
+          Punto de referencia: ({{ puntosDeReferencia[imagen.id].x }}, {{ puntosDeReferencia[imagen.id].y }})
+        </li>
+      </ul>
+      <button type="submit">Guardar Test</button>
+    </form>
+  </div>
+</div>

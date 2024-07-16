@@ -1,0 +1,33 @@
+
+.nav-link {
+  color: #000; /* Color de texto por defecto */
+  font-weight: normal; /* Peso de la fuente normal */
+  text-decoration: none; /* Sin subrayado por defecto */
+  font-size: 20px; /* Tamaño de fuente */
+  font-family: Poppins; /* Fuente */
+  cursor: pointer; /* Cambiar a cursor de puntero */
+}
+
+.nav-link.active {
+  font-weight: bold; /* Texto en negrita cuando esté activo */
+  text-decoration: underline; /* Subrayado cuando esté activo */
+}
+
+button {
+  background-color: #1097AD; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border-radius: 8px; /* Borde redondeado */
+  font-size: 18px; /* Tamaño de fuente */
+  font-family: Barlow; /* Fuente del botón */
+  text-transform: capitalize; /* Transformar texto en mayúsculas */
+  padding: 10px 30px; /* Relleno interno */
+}
+
+@media (max-width: 767px) {
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

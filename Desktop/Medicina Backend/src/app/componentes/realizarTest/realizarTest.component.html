@@ -1,0 +1,14 @@
+<div *ngFor="let test of tests">
+  <div>
+    <h2>{{ test.pregunta }}</h2>
+    <img [src]="test.imagenId" (click)="marcarRespuesta(test.id, $event)">
+    <div>
+      <label for="x-{{test.id}}">Coordenada X:</label>
+      <input type="number" [id]="'x-' + test.id" [(ngModel)]="respuestas[test.id].x">
+      <label for="y-{{test.id}}">Coordenada Y:</label>
+      <input type="number" [id]="'y-' + test.id" [(ngModel)]="respuestas[test.id].y">
+      <button (click)="verificarRespuesta(test)">Verificar</button>
+    </div>
+    <div>{{ mensajes[test.id] }}</div>
+  </div>
+</div>

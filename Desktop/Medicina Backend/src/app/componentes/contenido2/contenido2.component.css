@@ -1,0 +1,81 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos personalizados */
+.text-center {
+  text-align: center;
+}
+
+.texto {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 10px;
+}
+
+.filtro-bg-white {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

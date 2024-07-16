@@ -1,0 +1,84 @@
+.cuad {
+  height: 315px;
+  flex-shrink: 0;
+  background: #FFFFFF !important;
+}
+
+.tit {
+  width: 100%;
+  max-width: 469px;
+  height: 65px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  width: 736px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  font-size: 24px;
+  font-family: Poppins;
+  font-style: normal;
+}
+.tit span {
+  display: inline;
+  color: #FFD342;
+}
+p.lead {
+  display: inline;
+  align-items: center;
+}
+p.lead svg {
+  margin-right: 5px;
+}
+
+@media (max-width: 991px) {
+  .col-lg-5 {
+    order: 2;
+    text-align: center;
+  }
+  .tit {
+    font-size: 24px;
+  }
+  .col-lg-7 {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para títulos en pantallas pequeñas (ejemplo: teléfonos móviles) */
+@media (max-width: 767px) {
+  .tit {
+    font-size: 14px;
+  }
+  p {
+    font-size: 18px; /* Tamaño de fuente más grande para mejorar la legibilidad en pantallas pequeñas */
+    max-width: 100%; /* Asegura que el párrafo no se desborde en pantallas estrechas */
+    padding: 10px; /* Agrega un poco de espacio alrededor del párrafo para mejorar la legibilidad */
+  }
+  .col-lg-5.text-center img {
+    max-width: 50%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+    height: auto; /* Permite que la altura de la imagen se ajuste proporcionalmente */
+    display: block; /* Asegura que la imagen esté centrada horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+}

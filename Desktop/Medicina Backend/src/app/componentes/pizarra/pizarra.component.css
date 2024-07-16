@@ -1,0 +1,29 @@
+.contenedor-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+  
+  .botones, .botones-funcionalidad {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pizarra {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  canvas {
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    max-width: 100%;
+    height: auto;
+  }
+  
