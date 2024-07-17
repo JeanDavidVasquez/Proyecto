@@ -1,0 +1,64 @@
+
+
+#cont {
+  background-color: #21B2C5;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.texto {
+  text-align: center;
+}
+
+.texto{
+  color: #fff;
+}
+
+.card-custom {
+  background-color: linear-gradient(to bottom, #4CCBDC, #21B2C5);
+  width: 75%; /* Reduce el tamaño de la tarjeta al 75% de su contenedor */
+  margin: 0 auto; /* Centra la tarjeta en su contenedor */
+}
+
+.card-custom2 {
+  width: 75%; /* Reduce el tamaño de la tarjeta al 75% de su contenedor */
+  margin: 0 auto; /* Centra la tarjeta en su contenedor */
+}
+
+.img-custom {
+  width: 75%;  /* Este es el ancho de la imagen, puedes ajustarlo a tus necesidades */
+  height: auto;  /* Esto mantiene la proporción de la imagen */
+  display: block;  /* Esto hace que la imagen se centre en el div que la contiene */
+  margin-top: 10%;
+  margin-left: 10%;
+
+
+}
+
+
+.card-title{
+  text-align: center;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.color{ 
+  color: #FFD342;
+}
+
+.linea-amarilla {
+  border: 0;
+  height: 2px;  /* Esta es la altura de la línea, puedes ajustarla a tus necesidades */
+  background-color: yellow;  /* Este es el color de la línea */
+}
+
+.vertical-line {
+  width: 2px; /* Ancho de la línea vertical */
+  height: 100%; /* Altura igual a la tarjeta */
+  background: #FFD342; /* Color de fondo */
+  position: absolute;
+  left: 120%; /* Posición en el centro horizontal de la tarjeta */
+  transform: translateX(-50%); /* Centra la línea vertical */
+}

@@ -1,0 +1,14 @@
+.punto-marcado {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.punto-correcto {
+  background-color: green;
+}
+
+.punto-incorrecto {
+  background-color: red;
+}

@@ -1,0 +1,129 @@
+.card-custom {
+  background: linear-gradient(180deg, rgba(191, 242, 250, 0.00) 0%, #BFF2FA 100%);
+  width: 85%;
+  /* Reduce el tamaño de la tarjeta al 75% de su contenedor */
+  margin: 0 auto;
+  /* Centra la tarjeta en su contenedor */
+  height: 100%;
+  padding: 10px 15px;
+}
+
+.img-custom {
+  width: 75%;
+  /* Este es el ancho de la imagen, puedes ajustarlo a tus necesidades */
+  height: auto;
+  /* Esto mantiene la proporción de la imagen */
+  display: block;
+  /* Esto hace que la imagen se centre en el div que la contiene */
+  margin-top: 10%;
+  margin-left: 10%;
+}
+/*FONDO DEL TEXTO PARA PONER LA LINEA*/
+.fondo {
+  background-color: white;
+  width: 50%;
+  /* Establece el ancho deseado */
+  height: 50px;
+  /* Establece la altura deseada */
+  margin: 0 auto;
+  /* Centra horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Titulo de las tarejtas*/
+.titulo {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  /* Establece la posición relativa para el elemento de titulo */
+}
+/*LINEA DEL TITULO*/
+.titulo::before,
+.titulo::after {
+  content: '';
+  /* Agrega contenido a los seudoelementos ::before y ::after */
+  position: absolute;
+  /* Establece la posición absoluta para los seudoelementos */
+  width: 60%;
+  /* Ancho del 50% para que cada línea cubra la mitad del ancho del titulo */
+  height: 4px;
+  /* Grosor de la línea */
+  background: #1097AD;
+  /* Color sólido del trazo de la línea */
+  top: 50%;
+  /* Posición vertical en el centro del titulo */
+  transform: translateY(-50%);
+  /* Centra verticalmente la línea */
+}
+.titulo::before {
+  background: #1097AD;
+  /* Color sólido del trazo de la línea */
+  left: -70%;
+  /* Línea antes del titulo, comienza desde la izquierda de la pantalla */
+}
+
+.titulo::after {
+  background: #1097AD;
+  /* Color sólido del trazo de la línea */
+  right: -70%;
+  /* Línea después del titulo, comienza desde la derecha de la pantalla */
+}
+
+/*para la flecha DE CADA TARJETA*/
+.card-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  height: 90%;
+
+}
+
+/* Estilo para h5 titulo de tarjetas*/
+h5 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+/* Estilo para p texto de tarjetas */
+p {
+  color: #000;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*Para que sea responsivo */
+/* Estilos para títulos en pantallas grandes (ejemplo: escritorio) */
+.titulo {
+  font-size: 36px;
+}
+
+/* Estilos para títulos en pantallas medianas (ejemplo: tablets) */
+@media (max-width: 991px) {
+  .titulo {
+    font-size: 24px;
+  }
+}
+
+/* Estilos para títulos en pantallas pequeñas (ejemplo: teléfonos móviles) */
+@media (max-width: 767px) {
+  .titulo {
+    font-size: 18px;
+  }
+}

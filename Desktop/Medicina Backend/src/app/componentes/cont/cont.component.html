@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenidos</title>
+  <link rel="stylesheet" href="cont.component.css"> 
+</head>
+<body>
+
+<div id="cont">
+  <h1 class="texto">Contenidos</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    
+    <div class="col-4">
+      <div class="card card-custom">
+        <div class="vertical-line"></div>
+        <button (click)="redirectToTipoPage('Volumen1')" class="link-custom" data-volumen="Volumen1" >
+          <img class="img-custom" src="./assets/extSup.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Volumen 1:</h5>
+            <h5 class="card-title">EXTREMIDADES SUPERIORES</h5>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card card-custom">
+        <div class="vertical-line"></div>
+        <button (click)="redirectToTipoPage('Volumen2')" class="link-custom" data-volumen="Volumen2">
+          <img class="img-custom" src="./assets/extInf.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Volumen 2:</h5>
+            <h5 class="card-title">EXTREMIDADES INFERIORES</h5>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card card-custom">
+        <button (click)="redirectToTipoPage('Volumen3')" class="link-custom" data-volumen="Volumen3">
+          <img class="img-custom" src="./assets/cabCuello.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Volumen 3:</h5>
+            <h5 class="card-title">CABEZA Y CUELLO</h5>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <div class="card card-custom2">
+        <p class="text">Te presento las distintas secciones, las cuales te ayudarán a reforzar tu conocimiento sobre:
+          <b class="color">ANATOMÍA HUMANA</b>
+        </p>
+        <img src="./assets/figCont (1).png" alt="">
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card card-custom">
+        <div class="vertical-line"></div>
+        <button (click)="redirectToTipoPage('Volumen4')" class="link-custom" data-volumen="Volumen4">
+          <img class="img-custom" src="./assets/OrgInt.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Volumen 4:</h5>
+            <h5 class="card-title">ORGANOS INTERNOS</h5>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card card-custom">
+        <button (click)="redirectToTipoPage('Volumen5')" class="link-custom" data-volumen="Volumen5">
+          <img class="img-custom" src="./assets/torso.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Volumen 5:</h5>
+            <h5 class="card-title">TORSO</h5>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

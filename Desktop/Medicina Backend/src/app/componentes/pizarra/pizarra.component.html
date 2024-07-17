@@ -1,0 +1,26 @@
+<div class="contenedor-central">
+  <div *ngFor="let imagen of imagenes$ | async">
+    <!-- Mostrar las imágenes aquí -->
+    <img [src]="imagen.url" alt="Imagen">
+  </div>
+
+  <!-- Botones para diferentes tipos de imágenes -->
+  <div class="botones">
+    <button (click)="filtrarImagenes('Radiografias')">Radiografías</button>
+    <button (click)="filtrarImagenes('Muestras 2D')">Muestras 2D</button>
+    <button (click)="filtrarImagenes('Videos Anatomia')">Videos Anatomía</button>
+    <button (click)="filtrarImagenes('Imagenes 2D')">Imágenes 2D</button>
+  </div>
+
+  <!-- Botones de funcionalidad -->
+  <div class="botones-funcionalidad">
+    <button (click)="setDrawingMode('pencil')">Lápiz</button>
+    <button (click)="setDrawingMode('eraser')">Borrar</button>
+    <button (click)="clearCanvas()">Limpiar</button>
+  </div>
+
+  <!-- Pizarra -->
+  <div class="pizarra">
+    <canvas #canvas width="1000" height="400"></canvas>
+  </div>
+</div>

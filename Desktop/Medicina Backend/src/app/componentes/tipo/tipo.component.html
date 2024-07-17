@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let tipo of tipos; let i = index" class="col-sm-3 filtro-bg-white">
+      <div class="dropdown">
+        <button style="position: relative;" (click)="tipoSeleccionado === tipo ? tipoSeleccionado = '' : tipoSeleccionado = tipo"
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="{{ 'filtro' + i + 'Dropdown' }}"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+          {{ tipo }}
+
+        </button>
+        <div *ngIf="tipoSeleccionado === tipo" style="position: absolute; background-color: white; width: 100%; border: 2px solid; display: flex; flex-direction: column;">
+          <span style="cursor: pointer;" (click)="redireccionarAPizarra(item)"  *ngFor="let item of opciones">{{item}}</span>
+        </div>
+        <ul class="dropdown-menu" [attr.aria-labelledby]="'filtro' + i + 'Dropdown'">
+          <li *ngFor="let parte of ['Muestras 3D', 'Muestras 2D', 'Radiografía', 'Video explicativo']">
+            <a class="dropdown-item" (click)="redireccionarAPizarra(parte)">{{ parte }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="images-container">
+        <a [routerLink]="['/pizarra', volumen, tipo]">
+          <img [src]="'./assets/' + tipo + '.png'" alt="Imagen {{ tipo }}">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

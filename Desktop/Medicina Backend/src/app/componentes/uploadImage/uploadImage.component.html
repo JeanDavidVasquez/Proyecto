@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+  <input type="file" (change)="onFileSelected($event)">
+  <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="Nombre">
+  <select [(ngModel)]="volumen" name="volumen">
+    <option *ngFor="let option of volumenOptions" [value]="option">{{ option }}</option>
+  </select>
+  <select [(ngModel)]="tipo" name="tipo">
+    <option *ngFor="let option of tipoOptions" [value]="option">{{ option }}</option>
+  </select>
+  <select [(ngModel)]="tipoImagen" name="tipoImagen">
+    <option *ngFor="let option of tipoImagenOptions" [value]="option">{{ option }}</option>
+  </select>
+  <button type="submit">Subir imagen</button>
+</form>
